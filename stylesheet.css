@@ -75,10 +75,9 @@ a {
   margin-right: 5px;
 }
 
-header {
-  height: 65px;
+.header-logo {
+  height: 100px;
   width: 100%;
-  background-color: rgba(34,49,52,0.9);
   position :fixed;
   top: 0;
   z-index: 10;
