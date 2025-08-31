@@ -36,14 +36,13 @@ display: flex;
 
 .sakuhin_haikei {
   width: 300px;
-  height: 300px;
   margin-right: 20px;
   text-align: center;
   background: linear-gradient(rgba(255, 192, 203, 0.11),rgba(46, 2, 46, 0.764));
 }
 
 .sakuhin1 {
-  margin: 40px 0px 0 0px;
+  margin: 40px 0px 30px 0px;
   width:80%;
   text-align: center;
 }
