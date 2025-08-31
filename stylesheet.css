@@ -124,7 +124,12 @@ a {
 }
 
 .header-left {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0 0px 0px;
+  position: fixed;
   float: left;
+  z-index: 100;
 }
 
 .header-right {
@@ -155,12 +160,26 @@ a {
   position: relative;
 }
 
-.kasaneru p {
+.kasaneru h2 {
   position: absolute;
+  color: white;
+  top: 10px;
+  left: 50px;
+  font-size: 35px;
+  font-family: "Sawarabi Mincho";
+}
+
+.kasaneru h3 {
+  position: absolute;
+  color: white;
+  top: 90px;
+  left: 120px;
+  font-size: 35px;
+  font-family: "Sawarabi Mincho";
 }
 
 
-.kansya {
+.kasaneru img {
   width: 100%;
   height: 300px;
 }
@@ -342,3 +361,5 @@ footer {
 .scroll-infinity__item>img {
   width: 100%;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
