@@ -31,25 +31,38 @@ a {
 }
 
 .sakuhin_main {
-display: flex;
+  display: flex;
 }
 
 .sakuhin_haikei {
   width: 300px;
   margin-right: 20px;
   text-align: center;
-  background: linear-gradient(rgba(255, 192, 203, 0.11),rgba(46, 2, 46, 0.764));
+  background: linear-gradient(rgba(255, 192, 203, 0.11), rgba(46, 2, 46, 0.764));
 }
 
 .sakuhin1 {
   margin: 40px 0px 30px 0px;
-  width:80%;
+  width: 30%;
   text-align: center;
 }
 
 .sakuhin2 {
   margin: 40px 0 10px 0;
-  width:70%;
+  width: 30%;
+}
+
+.sakuhin3 {
+  margin: 40px 0 10px 0;
+  width: 30%;
+}
+
+
+.top-wrapper h2 {
+  opacity: 0.7;
+  font-size: 30px;
+  letter-spacing: 5px;
+
 }
 
 .top-wrapper p {
@@ -99,7 +112,7 @@ display: flex;
 .header-logo {
   height: 100px;
   width: 100%;
-  position :fixed;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -129,12 +142,12 @@ display: flex;
 }
 
 .header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.lesson-wrapper h1{
+.lesson-wrapper h2 {
   opacity: 0.7;
-  font-size: 45px;
+  font-size: 30px;
   letter-spacing: 5px;
 }
 
@@ -142,14 +155,14 @@ display: flex;
   position: relative;
 }
 
-.kasaneru p{
+.kasaneru p {
   position: absolute;
 }
 
 
 .kansya {
   width: 100%;
-  height: 500px;
+  height: 300px;
 }
 
 .heading {
@@ -258,18 +271,6 @@ footer {
   }
 }
 
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-    color: black;
-    z-index: 100;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
-}
-
 @media all and (max-width: 670px) {
   .header-right {
     display: none;
@@ -291,10 +292,6 @@ footer {
     text-align: left;
   }
 
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
   .top-wrapper p {
     font-size: 14px;
   }
@@ -310,4 +307,38 @@ footer {
   .message-wrapper .btn {
     width: 100%;
   }
+}
+
+
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+
+.scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0
+}
+
+.scroll-infinity__list--left {
+  animation: infinity-scroll-left 40s infinite linear 0.5s both;
+}
+
+.scroll-infinity__item {
+  width: calc(100vw / 2);
+}
+
+.scroll-infinity__item>img {
+  width: 100%;
 }
